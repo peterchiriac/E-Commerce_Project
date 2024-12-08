@@ -76,36 +76,36 @@ This project uses the Online Retail Dataset from the UCI Machine Learning Reposi
 
 ---
 
-6. Project Workflow
-	1.	Data Collection and Integration:
-	•	Loaded the dataset from the UCI repository.
-	•	Inspected and summarized data to identify key issues like missing values.
-	2.	Data Cleaning and Transformation:
-	•	Removed missing and duplicate entries.
-	•	Engineered features like TotalSales, Recency, and Frequency.
-	3.	Customer Segmentation:
-	•	Categorized customers into Low, Medium, and High spenders based on their total purchases.
-	•	Used thresholds of £500 and £1000 for segmentation.
-	4.	Statistical Analysis:
-	•	Computed correlations between TotalSales, Recency, and Frequency.
-	•	Highlighted insights into spending behavior and purchase patterns.
-	5.	Data Visualization:
-	•	Plotted customer segment distribution, CLV, and correlations for actionable insights.
-	6.	Recommendations:
-	•	Developed marketing strategies for customer retention and revenue growth.
+6. Project Workflow  
+	1.	Data Collection and Integration:  
+	•	Loaded the dataset from the UCI repository.  
+	•	Inspected and summarized data to identify key issues like missing values.  
+	2.	Data Cleaning and Transformation:  
+	•	Removed missing and duplicate entries.  
+	•	Engineered features like TotalSales, Recency, and Frequency.  
+	3.	Customer Segmentation:  
+	•	Categorized customers into Low, Medium, and High spenders based on their total purchases.  
+	•	Used thresholds of £500 and £1000 for segmentation.  
+	4.	Statistical Analysis:  
+	•	Computed correlations between TotalSales, Recency, and Frequency.  
+	•	Highlighted insights into spending behavior and purchase patterns.  
+	5.	Data Visualization:  
+	•	Plotted customer segment distribution, CLV, and correlations for actionable insights.  
+	6.	Recommendations:  
+	•	Developed marketing strategies for customer retention and revenue growth.  
 
 ---
 
 7. Key Insights and Recommendations
 
-Key Insights:
-	•	High-Spending Customers:
-	•	Contribute disproportionately to total sales.
-	•	Tend to buy frequently, justifying loyalty programs.
-	•	Low-Spending Customers:
-	•	Represent the majority but require targeted marketing to boost spending.
-	•	Correlation Insights:
-	•	Frequency has a moderate positive correlation with total sales.
+Key Insights:  
+	•	High-Spending Customers:  
+	•	Contribute disproportionately to total sales.  
+	•	Tend to buy frequently, justifying loyalty programs.  
+	•	Low-Spending Customers:  
+	•	Represent the majority but require targeted marketing to boost spending.  
+	•	Correlation Insights:  
+	•	Frequency has a moderate positive correlation with total sales.  
 
 Recommendations:
 	1.	Introduce a tiered loyalty program (e.g., Bronze, Silver, Gold) to reward high-spending customers.
@@ -114,24 +114,24 @@ Recommendations:
 
  ---
 
- 8. Future Enhancements
-	2.	Expand visualization capabilities for interactive dashboards.
-	3.	Implement predictive analytics for churn and sales forecasting.
+ 8. Future Enhancements:
+ 
+	i.	Expand visualization capabilities for interactive dashboards.  
+	ii.	Implement predictive analytics for churn and sales forecasting.  
 
 ---
 
- 9. Installation
-     
- 1. Clone this repository:  
+ 9. Installation     
+	i.	Clone this repository:  
 git clone https://github.com/peterchiriac/online-retail-customer-insights.git    
 cd online-retail-customer-insights  
- 2.	Install required libraries:  
+	ii.	Install required libraries:  
  pip install -r requirements.txt  
- 3.	Run the analysis script to generate insights.
+	iii.	Run the analysis script to generate insights.
 
 ---
 
- 4.	10. Contact
+ 10. Contact
 
 For inquiries or suggestions, feel free to reach out:
 	•	Email: peter.chiriac@outlook.com
