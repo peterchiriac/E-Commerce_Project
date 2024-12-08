@@ -40,34 +40,34 @@ This project uses the Online Retail Dataset from the UCI Machine Learning Reposi
 
 ---
 
-## 3. Project Objectives
-1.	Customer Segmentation: Identify low, medium, and high-spending customers.
-2.	Customer Behavior Analysis: Investigate recency, frequency, and monetary patterns.
-3.	Feature Engineering: Create actionable features like Customer Lifetime Value (CLV).
-4.	Insights & Recommendations: Provide data-driven strategies for customer engagement.
+## 3. Project Objectives  
+1.	Customer Segmentation: Identify low, medium, and high-spending customers.  
+2.	Customer Behavior Analysis: Investigate recency, frequency, and monetary patterns.  
+3.	Feature Engineering: Create actionable features like Customer Lifetime Value (CLV).  
+4.	Insights & Recommendations: Provide data-driven strategies for customer engagement.  
 
 ---
 
- ## 4. Key Features
-1.	Data Cleaning:
-	•	Handled missing values by removing incomplete records.
-	•	Eliminated duplicates to ensure accuracy.
-	•	Verified and retained valid outliers representing product returns and luxury items.
-2.	Feature Engineering:
-	•	Extracted time-based features like purchase hour, day, and month.
-	•	Computed total sales per customer.
-	•	Created segmentation based on spending behavior: Low, Medium, and High.
-3.	Customer Insights:
-	•	Analyzed customer recency, frequency, and lifetime value (CLV).
-	•	Correlated total sales with recency and frequency to identify trends.
-4.	Data Visualization:
-	•	Visualized customer segmentation distribution.
-	•	Highlighted top customers by lifetime value using bar charts.
-	•	Correlation heatmaps for key variables (e.g., sales and frequency).
+ ## 4. Key Features  
+1.	Data Cleaning:  
+	•	Handled missing values by removing incomplete records.  
+	•	Eliminated duplicates to ensure accuracy.  
+	•	Verified and retained valid outliers representing product returns and luxury items.  
+2.	Feature Engineering:  
+	•	Extracted time-based features like purchase hour, day, and month.  
+	•	Computed total sales per customer.  
+	•	Created segmentation based on spending behavior: Low, Medium, and High.  
+3.	Customer Insights:  
+	•	Analyzed customer recency, frequency, and lifetime value (CLV).  
+	•	Correlated total sales with recency and frequency to identify trends.  
+4.	Data Visualization:  
+	•	Visualized customer segmentation distribution.  
+	•	Highlighted top customers by lifetime value using bar charts.  
+	•	Correlation heatmaps for key variables (e.g., sales and frequency).  
 
 ---
 
-## 5. Technologies Used
+## 5. Technologies Used  
 
 | **Technology**  | **Purpose**                           |
 |------------------|---------------------------------------|
@@ -81,9 +81,9 @@ This project uses the Online Retail Dataset from the UCI Machine Learning Reposi
 ---
 
 
-## 6. Project Workflow
+## 6. Project Workflow  
 1.	Data Collection and Integration:  
-	•	Loaded the dataset from the UCI repository.  
+	•	Loaded the dataset from the UCI repository.    
 	•	Inspected and summarized data to identify key issues like missing values.  
 2.	Data Cleaning and Transformation:  
 	•	Removed missing and duplicate entries.  
@@ -112,10 +112,27 @@ Key Insights:
 	•	Correlation Insights:  
 	•	Frequency has a moderate positive correlation with total sales.  
 
-Recommendations:
-	1.	Introduce a tiered loyalty program (e.g., Bronze, Silver, Gold) to reward high-spending customers.
-	2.	Engage low-spending customers with discounts and cross-sell opportunities.
-	3.	Use RFM segmentation for personalized marketing campaigns.
+Recommendations:  
+	1.	Introduce a tiered loyalty program (e.g., Bronze, Silver, Gold) to reward high-spending customers.  
+	2.	Engage low-spending customers with discounts and cross-sell opportunities.  
+	3.	Use RFM segmentation for personalized marketing campaigns.  
+
+## 7.1 Visualisations
+
+### Customer Segment Distribution
+This chart shows the distribution of customers across spending categories:
+
+![Customer Segment Distribution](visualizations/customer_segment_distribution.png)
+
+### Correlation Heatmap
+The heatmap below visualises the relationships between Total Sales, Frequency, and Recency:
+
+![Correlation Heatmap](visualizations/correlation_heatmap.png)
+
+### Top Customers by Customer Lifetime Value (CLV)
+A bar chart highlighting the top 10 customers by their lifetime value:
+
+![Top Customers by CLV](visualizations/top_customers_by_clv.png)
 
  ---
 
