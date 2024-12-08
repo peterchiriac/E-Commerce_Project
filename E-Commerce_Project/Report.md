@@ -1,4 +1,4 @@
-Customer Behavior Insights and Recommendations Report
+# Customer Behavior Insights and Recommendations Report
 
 1. Focus on High-Spending Customers
 
