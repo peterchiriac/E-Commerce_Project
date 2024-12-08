@@ -1,4 +1,4 @@
-## Online Retail Customer Segmentation and Insights
+## Online Retail Customer Segmentation and Insights Right
 
 Explore customer behavior and unlock actionable insights from transactional data.
 
