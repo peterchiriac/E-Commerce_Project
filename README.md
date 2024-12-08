@@ -28,7 +28,7 @@ This project aims to analyze transactional data to understand customer behavior,
 
 2. Dataset
 
-This project uses the Online Retail Dataset from the UCI Machine Learning Repository. It contains transactional data for a UK-based non-store online retailer.  
+This project uses the Online Retail Dataset from the UCI Machine Learning Repository. It contains transactional data for a UK-based non-store online retailer.    
 	•	Data Summary:  
 	•	Time Period: 01/12/2010 to 09/12/2011  
 	•	Transactions: 541,909  
