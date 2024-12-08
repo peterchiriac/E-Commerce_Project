@@ -5,10 +5,13 @@
 
 # 1.1 Import Libraries
 import pandas as pd
-import numpy as np
+import os
+
+# Create the directory if it doesn't exist
+os.makedirs("visualizations", exist_ok=True)
 
 # 1.2 Load the dataset
-file_path = '/content/Users/peter/Desktop/pete_writes_code/E-Commerce_Project/Data/Online Retail.xlsx'
+file_path = '/Users/peter/Desktop/pete_writes_code/E-Commerce_Project/Data/Online Retail.xlsx'
 data = pd.read_excel(file_path)
 
 # 1.3 Inspect the data
@@ -171,21 +174,34 @@ print(segment_distribution)
 
 import seaborn as sns
 import matplotlib.pyplot as plt
-import matplotlib.ticker as mticker
+
+# Note: Ensure these libraries are installed
+# Run the following commands to install required libraries:
+# pip install pandas matplotlib seaborn
 
 # 5.1 Plot Customer Segment Distribution
-plt.figure(figsize=(8,6))
+plt.figure(figsize=(8, 6))
 sns.countplot(x='CustomerSegment', data=customer_sales, order=['Low-Spending', 'Medium-Spending', 'High-Spending'])
 plt.title('Customer Segment Distribution', fontsize=16)
-plt.xlabel('Customer Segment', fontsize=12)
-plt.ylabel('Count', fontsize=12)
-plt.show()
+plt.xlabel('Customer Segment', fontsize=14)
+plt.ylabel('Number of Customers', fontsize=14)
+plt.xticks(fontsize=12)
+plt.yticks(fontsize=12)
+plt.tight_layout()  # Ensure the layout doesn't cut off labels
+plt.savefig("visualizations/customer_segment_distribution.png", dpi=300)
+plt.close()  # Close the plot to free memory
 
 # 5.2 Correlation Heatmap
-plt.figure(figsize=(8,6))
+plt.figure(figsize=(8, 6))
 sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm', vmin=-1, vmax=1)
-plt.title('Correlation Heatmap', fontsize=16)
-plt.show()
+plt.title('Correlation Between Total Sales, Frequency, and Recency', fontsize=16)
+plt.xlabel('Features', fontsize=14)
+plt.ylabel('Features', fontsize=14)
+plt.xticks(fontsize=12)
+plt.yticks(fontsize=12)
+plt.tight_layout()
+plt.savefig("visualizations/correlation_heatmap.png", dpi=300)
+plt.close()
 
 # 5.3 Bar Plot of Customer Lifetime Value (CLV)
 
@@ -193,12 +209,13 @@ top_customers = customer_sales.nlargest(10, 'CLV')
 # Ensure CustomerID is treated as an integer
 top_customers['CustomerID'] = top_customers['CustomerID'].astype(int)
 
-plt.figure(figsize=(8,6))
-# Added .astype(str) to convert CustomerID to string for plotting
+plt.figure(figsize=(8, 6))
 sns.barplot(x=top_customers['CustomerID'].astype(str), y=top_customers['CLV'] / 1e6, data=top_customers)  # CLV in millions
 plt.title('Top 10 Customers by CLV', fontsize=16)
-plt.xlabel('Customer ID', fontsize=12)
-plt.ylabel('Customer Lifetime Value (CLV) in Millions [Currency]', fontsize=12)
-plt.xticks(rotation=45)
-plt.show()
-
+plt.xlabel('Customer ID', fontsize=14)
+plt.ylabel('Customer Lifetime Value (CLV) in Millions [Currency]', fontsize=14)
+plt.xticks(rotation=45, fontsize=12)
+plt.yticks(fontsize=12)
+plt.tight_layout()
+plt.savefig("visualizations/top_customers_by_clv.png", dpi=300)
+plt.close()
