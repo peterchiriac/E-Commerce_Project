@@ -1,18 +1,22 @@
-## Online Retail Customer Segmentation and Insights Right
+# Online Retail Customer Segmentation and Insights
+
+![Python](https://img.shields.io/badge/Python-3.7%2B-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
 
 Explore customer behavior and unlock actionable insights from transactional data.
 
-Table of Contents  
-	1.	Introduction  
-	2.	Dataset  
-	3.	Project Objectives  
-	4.	Key Features  
-	5.	Technologies Used  
-	6.	Project Workflow  
-	7.	Key Insights and Recommendations  
-	8.	Future Enhancements   
-	9.	Installation  
-	10.	Contact  
+## Table of Contents  
+1. [Introduction](#1-introduction)  
+2. [Dataset](#2-dataset)  
+3. [Project Objectives](#3-project-objectives)  
+4. [Key Features](#4-key-features)  
+5. [Technologies Used](#5-technologies-used)  
+6. [Project Workflow](#6-project-workflow)  
+7. [Key Insights and Recommendations](#7-key-insights-and-recommendations)  
+8. [Future Enhancements](#8-future-enhancements)  
+9. [Installation](#9-installation)  
+10. [License](#10-license)  
+11. [Contact](#11-contact)  
 
  ---
 
@@ -121,18 +125,30 @@ Recommendations:
 
 ---
 
- 9. Installation     
-	i.	Clone this repository:  
+ 9. Installation        
+	
+ 	i.	Clone this repository:  
 git clone https://github.com/peterchiriac/online-retail-customer-insights.git    
 cd online-retail-customer-insights  
 	ii.	Install required libraries:  
  pip install -r requirements.txt  
 	iii.	Run the analysis script to generate insights.
+	Required Libraries:  
+	Ensure the following libraries are installed:  
+	•	Pandas: pip install pandas  
+	•	NumPy: pip install numpy  
+	•	Matplotlib: pip install matplotlib  
+	•	Seaborn: pip install seaborn  
+	•	openpyxl: pip install openpyxl  
 
 ---
 
- 10. Contact
+ 10. License
 
-For inquiries or suggestions, feel free to reach out:
-	•	Email: peter.chiriac@outlook.com
-	•	LinkedIn: Petre Chiriac
+This project is licensed under the MIT License. You are free to use, modify, and distribute this software under the terms of the MIT License. See the LICENSE file for details.
+
+---
+
+11. For inquiries or suggestions, feel free to reach out:  
+	•	Email: peter.chiriac@outlook.com  
+	•	LinkedIn: Petre Chiriac  
